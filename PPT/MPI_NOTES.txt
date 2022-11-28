@@ -1,0 +1,44 @@
+MPI:
+very large library--over 125 functions
+fairly basic to use---parallel program can be written using 6 general functions
+solid error handling---by default, an error causes all processes to abort
+can implement user defined error handling routines
+super portable since it is operating at very low level
+very efficient
+DOES NOT deal with process management, remote memory transfer, threads of 
+	virtual shared memory
+tracking data is fairly straighforward since it is sent/received using the 	address/count/datatype
+MPI declares data types so communication between different heterogeneous machines that
+	may have unique data representations are able to communicate
+MPI is effective way to manage memory in a per processor basis
+Important considerations while using MPI--All parallelism is explicit: the	programmer	is responsible for correctly identifying	parallelism	and	implementing	parallel algorithms	using	MPI constructs
+What is MPI-----
+ A messagepassing library specication
+
+ message passing model
+ not a compiler specication
+ not a specific product
+ For parallel computers clusters and heterogeneousnetworks
+ Fullfeatured
+ Designed to permit unleash  the development of
+	parallel software libraries
+ Designed to provide access to advanced parallel hardware for
+	 end users library writers tool developers
+Features of MPI---------
+ General
+  Communicators combine context and group for message security
+  Thread safety
+ Point to point communication
+  Structured buers and derived datatypes, heterogeneity
+  - Modes normal blocking and nonblocking
+         synchronous, ready (to allow access to fast protocols), buffered
+ Collective
+     Both built in and user-defined collective operations
+     Large number of data movement routines
+     Subgroups defined directly or by topology
+
+
+For networks, using a message passing API can be optimized for any given network
+	communication speed determined by the network itself but MPI can optimize
+	its available performance
+
