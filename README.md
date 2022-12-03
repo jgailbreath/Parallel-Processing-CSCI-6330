@@ -13,5 +13,5 @@ Each program should be compiled and ran as indicated. <br/>
 An example compile and execution statements using the GNU compiler is as follows:
 1. gcc serialmat.c -o serial_mat <br/> ./serial_mat <br/>
 2. mpicc mpi_matmult1.c -o mpi_mat <br/> mpiexec -n N ./mpi_mat		--Where N is the number of processors you want to run the program on <br/>
-3. gcc ompmat.c -o omp_mat -lpthread <br/> ./omp_mat N		--Where N is the number of threads you want to create <br/>
+3. gcc -fopenmp ompmat.c -o ompmat <br/> ./omp_mat N		--Where N is the number of threads you want to create <br/>
 
